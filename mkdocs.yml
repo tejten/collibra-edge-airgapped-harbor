@@ -1,6 +1,7 @@
 site_name: Collibra Edge Air‑gapped Install (Harbor)
 site_description: Step‑by‑step air‑gapped Edge install using Harbor for images and Helm charts
-repo_url: https://github.com/<you>/collibra-edge-airgapped-harbor
+repo_url: https://github.com/tejten/collibra-edge-airgapped-harbor
+site_url: https://tejten.github.io/collibra-edge-airgapped-harbor/
 theme:
   name: material
   features:

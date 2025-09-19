@@ -16,7 +16,13 @@ sudo keytool -importcert -alias harbor-shim   -file /opt/collibra_data/dgc/secur
 > - Trust store password: `<PASSWORD>`
 > - Trust store type: `PKCS12`
 
+![Harbor projects](./images/cpsh-ssl.png)
+
 ## 3.2 Configure Edge via Console API
+
+Send the following API request to Collibra Console, with the variables for your CPSH (run this on cpsh node):
+Note: Update the DGC service model UUID. Instructions are [here:](https://productresources.collibra.com/docs/cpsh/latest/Content/Installation/CPSH/ta_enable-edge-cpsh.htm)
+
 ```bash
 # Grab platform CA (adjust host/port)
 echo -n | openssl s_client -connect app01.<YOUR_DOMAIN>:5404 -showcerts  | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > /tmp/platform-ca.pem
@@ -35,3 +41,9 @@ curl -v --user '<ADMIN_USER>:<ADMIN_PASS>' -X POST "https://app01.<YOUR_DOMAIN>:
 ```
 
 > After applying, restart the environment as needed, then create an **Edge site** in DGC Console → Settings → Edge → *Create Site*.
+
+![Harbor projects](./images/dgc-create-site.png)
+
+> Download the Installer and scp to the edge node:
+
+![Harbor projects](./images/dgc-download-installer.png)

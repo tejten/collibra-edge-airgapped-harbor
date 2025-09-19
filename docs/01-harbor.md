@@ -40,9 +40,15 @@ docker login edge-docker-delivery.repository.collibra.io   -u <edge-customer-id>
 IMAGES=(
   edge/edgecli:2025.6.12
   edge/edge-controller:3.798.5
+  edge/edge-objects-server:3.798.5
+  edge/edge-proxy:0.282.8
+  edge/edge-sdk:5.399.2
+  edge/edge-session-manager:6.90.4
   sre/opentelemetry-collector:0.125.0
   capabilities/jdbc-ingestion:20.9.4
-  # ... add/update according to your chart version
+  capabilities/sample-writer:1.15.6
+  capabilities/jdbc-profiling:7.1.50 
+  capabilities/modular-classification:0.18.6
 )
 
 echo "$ROBOT_TOKEN" | docker login "${HARBOR_HOST}" --username "${ROBOT_USER}" --password-stdin

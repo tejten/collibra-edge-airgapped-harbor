@@ -61,3 +61,7 @@ EOF
 
 curl -s --cacert /opt/harbor/certs/harbor.crt   -H 'Content-Type: text/plain'   -X POST 'https://harbor.<YOUR_DOMAIN>:4443/artifactory/api/search/aql'   --data-binary @/tmp/test.aql | jq .
 ```
+![Harbor projects](./images/edge-shim-check.png)
+![Harbor projects](./images/helm-charts1.png)
+![Harbor projects](./images/helm-charts2.png)
+

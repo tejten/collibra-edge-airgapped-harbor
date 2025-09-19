@@ -62,3 +62,8 @@ done
 # Verify a tag exists
 curl -sS --cacert "$HARBOR_CERT" -u "${ROBOT_USER}:${ROBOT_TOKEN}"   "${HARBOR_URL}/v2/edge/edgecli/tags/list" | yq -p=json
 ```
+![Harbor projects](./images/harbor-edge.png)
+![Harbor projects](./images/harbor-sre.png)
+![Harbor projects](./images/harbor-capabilities.png)
+
+

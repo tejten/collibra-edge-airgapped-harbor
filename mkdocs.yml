@@ -1,0 +1,22 @@
+site_name: Collibra Edge Air‑gapped Install (Harbor)
+site_description: Step‑by‑step air‑gapped Edge install using Harbor for images and Helm charts
+repo_url: https://github.com/<you>/collibra-edge-airgapped-harbor
+theme:
+  name: material
+  features:
+    - navigation.expand
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
+nav:
+  - Overview: index.md
+  - 1. Harbor: 01-harbor.md
+  - 2. Helm Repo: 02-helm-repo.md
+  - 3. Enable CPSH: 03-enable-cpsh.md
+  - 4. Edge Node: 04-edge-node.md
+  - 5. Verify & Troubleshoot: 05-verify.md
+  - 6. Uninstall: 06-uninstall.md

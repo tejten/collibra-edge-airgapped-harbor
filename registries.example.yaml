@@ -1,0 +1,10 @@
+---
+version: 1
+configs:
+  - uri: harbor.<YOUR_DOMAIN>
+    tls:
+      # Path to a CA bundle that validates Harbor and the platform
+      ca_file: /etc/rancher/k3s/ca.pem
+    auth:
+      username: "robot$edge-all"
+      password: "<ROBOT_TOKEN>"

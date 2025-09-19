@@ -50,3 +50,5 @@ export ROBOT_TOKEN='<ROBOT_TOKEN>'
 cd /tmp
 ./install-master.sh /tmp/properties.yaml   -r /tmp/registries.yaml   --registry-url harbor.<YOUR_DOMAIN>   --registry-user "${ROBOT_USER}"   --registry-pass "${ROBOT_TOKEN}"   --ca /tmp/platform-ca.pem   --ignore-monitoring-requirements
 ```
+![Harbor projects](./images/edge-install.png)
+![Harbor projects](./images/edge-healthy.png)

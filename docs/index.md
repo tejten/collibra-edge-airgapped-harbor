@@ -1,6 +1,6 @@
 # Collibra Edge Air‑gapped Installation — Using Harbor Registry
 
-This documentation mirrors your internal guide and presents it in Markdown for GitHub (and an optional MkDocs site).
+`![Harbor projects](images/edge-airgapped-architecture.png)`
 
 ## Scope
 CPSH and Edge nodes are **fully air‑gapped**. Harbor hosts:

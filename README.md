@@ -18,7 +18,7 @@ A step‑by‑step guide to installing **Collibra Edge** in a fully air‑gapped
 
 Edge provides seamless native integrations and on-site data processing solutions that prioritize security and proximity to the data, while keeping the processing of your data within your own environment. It processes the data source information on the Edge site and sends the process results to Collibra. 
 
-Currently (Sepetember,2025), Collibra Edge only supports using the JFrog private Helm registry with user/pass authentication. https://productresources.collibra.com/docs/collibra/latest/Content/Edge/EdgeSecurity/ta_user-pass-registry.htm#tab-Private_Helm_registry. For customers, who prefer a open source registry option like Harbor, this repository provides a solution. 
+Currently (Sepetember,2025), Collibra Edge only supports using the [JFrog private Helm registry] (https://productresources.collibra.com/docs/collibra/latest/Content/Edge/EdgeSecurity/ta_user-pass-registry.htm#tab-Private_Helm_registry) with user/pass authentication. . For customers, who prefer a open source registry option like Harbor, this repository provides a solution. 
 
 Here are the high level steps: 
 
@@ -26,4 +26,4 @@ Here are the high level steps:
 - Hosts charts behind a lightweight **AQL shim + NGINX/TLS**.
 - Covers cert import, `registries.yaml`, and **air‑gapped gotchas**.
 
-> Credits: Original material by **Tej Tenmattam** (Version 06, 2025‑09‑02). PDF reference included.  
+> Credits: Original material by **Tej Tenmattam** (Version 07, 2025‑09‑19).  

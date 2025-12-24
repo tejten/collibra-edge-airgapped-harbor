@@ -13,6 +13,7 @@ A step‑by‑step guide to installing **Collibra Edge** in a fully air‑gapped
 - [4. Prepare the Edge Node](docs/04-edge-node.md)
 - [5. Verify & Troubleshoot](docs/05-verify.md)
 - [6. Uninstall](docs/06-uninstall.md)
+- [7. Run edge-shim as a systemd service](docs/07-edge-shim-service.md)
 
 ## Why this repo?
 
